@@ -17,15 +17,15 @@
             <children>
                <Rectangle fx:id="Text" arcHeight="5.0" arcWidth="5.0" fill="#cbdceb" height="114.0" layoutX="33.0" layoutY="14.0" onDragDropped="#handleDrop" onDragOver="#handleDragOver" stroke="BLACK" strokeType="INSIDE" width="279.0" />
                   <Text fx:id="text" layoutX="116.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-                  <Label layoutX="136.0" layoutY="61.0" text="Deposer ici" />
+                  <Label layoutX="93.0" layoutY="61.0" text="Déposez votre fichier ici" />
                   <Label layoutX="16.0" layoutY="159.0" text="Fichier: " />
                   <Label layoutX="16.0" layoutY="193.0" text="Date: " />
                   <Label layoutX="16.0" layoutY="224.0" text="Heure min" />
                   <Label layoutX="16.0" layoutY="259.0" text="Heure min: " />
                   <Line endX="100.0" layoutX="171.0" layoutY="296.0" startX="-100.0" />
-                  <Label layoutX="23.0" layoutY="325.0" text="Libelle" />
-                  <Label layoutX="23.0" layoutY="366.0" text="Heure debut" />
-                  <Label layoutX="23.0" layoutY="403.0" text="Heure fin: " />
+                  <Label layoutX="24.0" layoutY="325.0" text="Libellé" />
+                  <Label layoutX="17.0" layoutY="366.0" text="Heure début*" />
+                  <Label layoutX="23.0" layoutY="403.0" text="Heure fin*" />
                   <TextField fx:id="libelle" layoutX="116.0" layoutY="320.0" />
                   <TextField fx:id="HD" layoutX="116.0" layoutY="361.0" />
                   <TextField fx:id="HF" layoutX="116.0" layoutY="398.0" />
@@ -34,18 +34,19 @@
                   <Text fx:id="txtHF" layoutX="116.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
                   <Line endX="100.0" layoutX="173.0" layoutY="464.0" startX="-100.0" />
                   <Label layoutX="27.0" layoutY="477.0" text="Trier la sortie :" />
-                  <Label layoutX="209.0" layoutY="477.0" text="Generer,en sortie:" />
+                  <Label layoutX="202.0" layoutY="477.0" text="Générer en sortie:" />
                   <CheckBox fx:id="boxNom" layoutX="215.0" layoutY="512.0" mnemonicParsing="false" text="sans nom" />
                   <CheckBox fx:id="boxId" layoutX="215.0" layoutY="547.0" mnemonicParsing="false" text="sans id" />
                   <CheckBox fx:id="boxPlanning" layoutX="215.0" layoutY="579.0" mnemonicParsing="false" text="sans planning" />
-                  <RadioButton fx:id="radioID" layoutX="13.0" layoutY="512.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="73.0" text="par id">
+                  <RadioButton fx:id="radioID" layoutX="18.0" layoutY="512.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="73.0" text="par id">
                      <toggleGroup>
                         <ToggleGroup fx:id="radio" />
                      </toggleGroup>
                   </RadioButton>
                   <RadioButton fx:id="radioNom" layoutX="16.0" layoutY="547.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="91.0" text="par nom" toggleGroup="$radio" />
                   <Line endX="100.0" layoutX="173.0" layoutY="637.0" startX="-100.0" />
-                  <Button fx:id="buttonGener" layoutX="72.0" layoutY="648.0" mnemonicParsing="false" onAction="#pressedGenerer" prefHeight="31.0" prefWidth="201.0" text="Generer la sortie" />
+                  <Button fx:id="buttonGener" layoutX="72.0" layoutY="648.0" mnemonicParsing="false" onAction="#pressedGenerer" prefHeight="31.0" prefWidth="201.0" text="Générer la sortie" />
+                  <RadioButton fx:id="radioDuree" layoutX="16.0" layoutY="579.0" mnemonicParsing="false" text="par durée" toggleGroup="$radio" />
             </children>
          </Pane>
       </children>

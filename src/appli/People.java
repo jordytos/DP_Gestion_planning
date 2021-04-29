@@ -166,11 +166,6 @@ public class People //implements Comparable<People>
         return ( this._periodList.getFirst().get_start().format(formatter.withLocale(Locale.FRANCE)) );
     }
 
-	/*
-	 * @Override public int compareTo(People o) { // return
-	 * (int)(this.getTotalAttendanceDuration()-o.getTotalAttendanceDuration());
-	 * return (int)(this.getName().compareTo(o.getName())); }
-	 */
 
     public boolean isOutOfPeriod() {
         return this._periodList.isEmpty();

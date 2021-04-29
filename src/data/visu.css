@@ -33,18 +33,21 @@ p {
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	padding-left: 3px;
+/*1*/	display : none;
 }
 .duration {
 	grid-area: "col2";
 	text-align: center;
 	width: 40px;
 	background-color: #ddd;
+
 }
 .percentd {
 	grid-area: "col3";
 	text-align: center;
 	width: 60px;
-	background-color: #ddd;	
+	background-color: #ddd;
+/*Modif3*/
 }
 .timebar {
 	grid-area: "col4";
@@ -52,6 +55,7 @@ p {
 	background-color: #DDD;
 	border-left: solid 2px black;
 	border-right: solid 2px black;
+/*Modif2*/
 }
 .timebar img {
 	padding: 0;
